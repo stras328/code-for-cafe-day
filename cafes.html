@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>the archives</title>
+  <link rel="stylesheet" href="cafes_style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playball&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <a href="index.html" class="back-button">back</a>
+
+  <h1>for a café day: the archives</h1>
+
+  <div class="filters">
+    <button onclick="filterCategory('all')">all</button>
+    <button onclick="filterCategory('good music')">good music</button>
+    <button onclick="filterCategory('meals too!')">meals too!</button>
+    <button onclick="filterCategory('stellar drinks')">stellar drinks</button>
+    <button onclick="filterCategory('opens early')">opens early</button>
+    <button onclick="filterCategory('open late')">open late</button>
+    <button onclick="filterCategory('lots of seating')">lots of seating</button>
+
+    <button onclick="surpriseMe()">surprise me!</button>
+  </div>
+
+  <div class="cafe-list" id="cafeList"></div>
+
+  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+  <div class="popup" id="popup"></div>
+  
+  <div id="reviewOverlay" class="overlay" onclick="closeReviewForm()"></div>
+  <div id="reviewModal" class="popup" style="width: 90%; max-width: 600px;">
+    <iframe 
+      id="reviewIframe"
+      src=""
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      loading...
+    </iframe>
+  </div>  
+
+
+  <script src="script.js"></script>
+</body>
+</html>

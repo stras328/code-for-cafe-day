@@ -1,0 +1,189 @@
+body {
+    font-family: "Cormorant", serif;
+    background-color: #B3BFB8;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px 10px;
+  }
+  
+  h1 {
+    margin-top: 80px;
+    font-family: "Playball", cursive;
+    font-size: 2.5rem;
+    color: #526760;
+  }
+
+
+  .cormorant {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .playball-regular {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  
+  
+
+  .cafe-list {
+    margin-top: 20px;
+  }
+  
+  .cafe {
+    cursor: pointer;
+    color: #526760;
+    text-decoration: underline;
+    margin: 5px 0;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: #B3BFB8;
+    padding: 20px;
+    border: 3px dotted #526760;
+    border-radius: 1rem;
+    z-index: 1000;
+    max-height: 60vh; 
+    overflow-y: auto;  
+    width: 80%;
+  }
+  
+
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+  }  
+  
+  button {
+    padding: 10px 15px;
+    background-color: #CD8987;
+    color: #F0F7F4;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-family: "Cormorant";
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }  
+  
+ 
+  .back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #CD8987;
+    color: #F0F7F4;
+    border-radius: 1rem;
+    font-family: "Cormorant";
+    font-weight: bold;
+    font-size: 0.75rem;
+    transition: background 0.3s;
+  }
+  
+  .popup img {
+    margin: 10px 0;
+    border-radius: 8px;
+    max-width: 100%; 
+    height: auto;    
+     max-height: 300px; /
+}
+  
+  .popup p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    font-family: "Cormorant";
+    color: #526760;
+  }
+  
+  .popup h2 {
+    font-family: "Playball", cursive;
+    color: #526760;
+}
+
+  .popup h3 {
+    margin-top: 10px;
+    padding: 0.35em 1em;
+    color: #526760;
+
+  }
+  
+  .popup-button,
+  .popup-button:link,
+  .popup-button:visited,
+  .popup-button:active,
+  .popup-button:hover,
+  .popup-button:focus,
+  .popup-button:focus-visible,
+  .popup-button:target,
+  .popup-button[type="button"],
+  .popup-button[type="submit"] {
+    display: inline-block;
+    padding: 0.35em 1em;
+    background-color: #CD8987;
+    color: #F0F7F4;
+    border-radius: 1rem;
+    font-family: "Cormorant";
+    font-size: 0.65rem;
+    font-weight: 400;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+  }
+  
+  
+  
+/* Style for individual review bubbles */
+.review-bubble {
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px 20px; /* Some space inside the bubble */
+  margin-bottom: 10px; /* Space between bubbles */
+  max-width: 80%; /* Limit the width of the review bubble */
+  word-wrap: break-word; /* Break long words to fit the bubble */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+
+/* Style for the reviewer's name */
+.review-author {
+  font-weight: bold; /* Make the reviewer's name bold */
+  color: #333; /* Dark gray color for the name */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style for the review text */
+.review-text {
+  font-size: 16px; /* Slightly larger font for the review */
+  color: #555; /* Medium gray for the text */
+  margin-top: 5px;
+}
